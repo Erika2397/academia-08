@@ -1,0 +1,16 @@
+nav {
+    background-color: aquamarine;
+}
+
+header {
+    background-color: #FF2400;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
