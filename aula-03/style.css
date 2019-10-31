@@ -1,8 +1,16 @@
 .div-1{
     background-color: red; 
-     
+    width: 20%;
+    margin-bottom: 5%;
+    padding: 10%;
+    margin:5% auto;    
+    text-align: center;
 }
 
 .div-2{
+    width:20%;
     background-color:limegreen;
+    padding: 10%;
+    margin:0 auto;
+    text-align: center;
 }
