@@ -1,0 +1,127 @@
+body {
+    display: grid;
+    grid-template-areas: 'navbar'
+                        'banner'
+                        'main'
+                        'section'
+                        'contact'
+                        'footer';
+grid-template-columns: 100%;
+margin: 0%;
+                    
+}
+
+nav {
+    grid-area: 'navbar' ;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'McLaren', cursive;;
+    color: black;
+
+
+}
+nav a:hover{
+    background-color: pink;
+
+}
+
+nav img {
+    width: 85px;
+}
+
+nav div:nth-child(2) {
+    display: none;
+
+}
+
+nav div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    width:400px;
+    height: 20px;    
+    justify-content: space-around;
+}
+
+header {
+    grid-area: banner;
+    background-image: url(../imagens/vendetta_2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cabecalho {
+    grid-area: main;
+    background-color: coral;
+}
+
+#cabecalho h1, #cabecalho h2 {
+    text-align: center;
+    color: crimson;
+}
+
+.titulo {
+    text-transform: uppercase;  
+    font-family: 'Inconsolata', monospace;
+    font-size: 45px;
+    letter-spacing: 20px;
+}
+
+.subtitulo {
+    width: 350px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 35px;
+  
+}
+
+input:focus {
+    border-color: magenta;
+    color: lightseagreen;
+
+}
+
+input{
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: mediumvioletred;
+    }
+
+/*COMEÇA O RESPONSIVO*/
+
+@media (max-width: 800px){
+    nav div:nth-child(2){
+        display: inline-block;
+        width: 50px;
+    }
+
+    nav div:nth-child(3){
+        display: none;
+    }
+    .icon-burguer {
+    width: 55%;
+}
+
+header {
+    background-image: url(../imagens/vendetta.jpg);
+    height: 500px;   
+}
+}
+
