@@ -1,24 +1,30 @@
 let login = "Erika23"
 let senha = 123456
 
-let loginUsuario = prompt("Digite seu usuário, porfavor");
-let senhaUsuario = parseInt(prompt("Digite sua senha, por favor"));
 
-let numero = 1
 
-while(numero <= 3){
+let maximoTentativa = 3
+let tentativaAtual = 1
 
-    if (loginUsuario == login && senha == senhaUsuario){
-        alert ("Bem-vindx"); break;
+while(tentativaAtual <= maximoTentativa){
+    
+    let loginUsuario = prompt("Digite seu usuário, porfavor");
+    let senhaUsuario = parseInt(prompt("Digite sua senha, por favor"));
         
-    } else {
-        alert ("Você errou, tente de novo"); 
-        numero++;
-        if(numero == 4){
-            alert("ACABOU!")
-        }
-    } 
+        if (loginUsuario == login && senha == senhaUsuario){
+            alert ("Bem-vindx " + loginUsuario); 
 
+        tentativaAtual = maximoTentativa;
+        
+        } else {
+        
+            if(tentativaAtual == 3){
+                alert("Numero permitido de tentativas, sorry")
+        } else {
+            alert("Login inválido, tente novamente")
+        }
+        } 
+        tentativaAtual++;
     }  
 
     
