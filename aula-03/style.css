@@ -1,16 +1,27 @@
-.div-1{
-    background-color: red; 
-    width: 20%;
-    margin-bottom: 5%;
-    padding: 10%;
-    margin:5% auto;    
-    text-align: center;
+body{
+    margin: 0;
+    width: 100vw;
 }
 
-.div-2{
-    width:20%;
-    background-color:limegreen;
-    padding: 10%;
-    margin:0 auto;
+section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    
+}
+
+div{
+    width: 20%;
     text-align: center;
+}
+.div-1{    
+    background-color: red;    
+}
+
+.div-2{    
+    background-color:limegreen;    
+}
+
+.imagen-1{
+    width: 100%;
 }

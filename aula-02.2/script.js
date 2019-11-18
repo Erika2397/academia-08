@@ -20,11 +20,11 @@ while(tentativaAtual <= maximoTentativa){
         
             if(tentativaAtual == 3){
                 alert("Numero permitido de tentativas, sorry")
-        } else {
-            alert("Login inválido, tente novamente")
-        }
+            }else {
+                alert("Login inválido, tente novamente")
+            }
         } 
         tentativaAtual++;
-    }  
+}  
 
     

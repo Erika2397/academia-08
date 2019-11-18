@@ -1,4 +1,4 @@
-let animes = ["Death Note", "Boku no hero", "Dragon Ball Z", "Cavaleiros do zodiaco", "Naruto", "Super Onze", "Nazo no canojo"];
+/*let animes = ["Death Note", "Boku no hero", "Dragon Ball Z", "Cavaleiros do zodiaco", "Naruto", "Super Onze", "Nazo no canojo"];
 
 /*let i = 0
 while (i < animes.length){
@@ -6,6 +6,10 @@ while (i < animes.length){
     i++;
 }*/
 
-for (i = 0; i < animes.length; i++){
+/*for (i = 0; i < animes.length; i++){
     console.log(animes[i]);
-}
+}*/
+
+let icone = "#";
+
+for ()
