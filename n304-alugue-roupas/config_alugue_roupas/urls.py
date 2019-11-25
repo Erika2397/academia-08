@@ -19,5 +19,7 @@ from website import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home)
+    path('', views.home),
+    path('produtos/', views.produtos),
+    path('cadastro/', views.cadastro_pedido)
 ]
