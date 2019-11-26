@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from website.forms import PedidoForm
+from website.models import *
 
 # Create your views here.
 def home(request):
@@ -22,14 +23,23 @@ def home(request):
     return render(request, 'home.html', context)
 
 def produtos(request):
-    return render(request, 'produtos.html')
+
+    lista_produtos = Produto.objects.filter(disponivel=True)
+    context = {
+        
+        'produtos': lista_produtos
+    }
+    return render(request, 'produtos.html', context)
 
 def cadastro_pedido(request):
     form = PedidoForm(request.POST or None)
     print(form)
     if form.is_valid():
         form.save()
-        print("if")
+        context = {
+            'msg': 'pedido realizado com sucesso'
+        }
+        return render(request, 'pedido.html', context)
     context = {
         'formulario':form
     }
